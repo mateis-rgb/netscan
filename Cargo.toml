@@ -1,0 +1,14 @@
+[package]
+name = "netscan"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+opt-level = 3
+
+# Règle 10 : tous les avertissements activés et traités (le build casse sinon).
+[lints.rust]
+warnings = "deny"
+
+[lints.clippy]
+all = "deny"
